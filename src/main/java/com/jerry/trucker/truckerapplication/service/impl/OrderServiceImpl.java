@@ -66,6 +66,8 @@ public class OrderServiceImpl implements OrderService {
         System.out.println("Order will be created now");
         Order order = new Order();
         order.setBol(bol);
+        // update BOL as well
+
         order.setUser(user.get());
         order.setPickupLocation(pickUpAddress);
         order.setDropoffLocation(dropOffAddress);
@@ -77,6 +79,9 @@ public class OrderServiceImpl implements OrderService {
         System.out.println("Order Saved Now");
         OrderDto result = modelMapper.map(order, OrderDto.class);
         result.setUserDto(userDto);
+        bol.setOrder(order);
+        //update order in BOL
+        bolRepository.save(bol);
         return result;
     }
 

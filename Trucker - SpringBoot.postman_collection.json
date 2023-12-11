@@ -1,0 +1,878 @@
+{
+	"info": {
+		"_postman_id": "c4a17881-934a-4b35-a903-fed59fd0dd9b",
+		"name": "Trucker - SpringBoot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6244901",
+		"_collection_link": "https://bold-resonance-800141.postman.co/workspace/Jerry's-Workspace~4d03360e-9d61-4a73-8424-97cb4c565ced/collection/6244901-c4a17881-934a-4b35-a903-fed59fd0dd9b?action=share&source=collection_link&creator=6244901"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Testing",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/testing",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"testing"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"Jerry\",\r\n    \"last_name\":\"Joy\",\r\n    \"email\":\"jerryjoy99@gmail.com\",\r\n    \"password\":\"31031999\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"jerryjoy99@gmail.com\",\r\n    \"password\":\"31031999\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bol",
+			"item": [
+				{
+					"name": "Create Bol",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqZXJyeWpveTk5QGdtYWlsLmNvbSIsImlhdCI6MTcwMjI3NjY3OCwiZXhwIjoxNzAyODgxNDc4fQ.bpH-pSr5uKwLI_WL1cttIkcim53JanangYWp_wXfUdaagpeSe1yKK2Y9mS-LpAOx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/bol/8845bu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"bol",
+								"8845bu"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch Bol",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqZXJyeWpveTk5QGdtYWlsLmNvbSIsImlhdCI6MTcwMjI4NTM4NiwiZXhwIjoxNzAyODkwMTg2fQ.szW8bsgaOzPgkAs5qQn1cHAkCUPafx8bafPZNWQ-qdKydZd2w9kVFV9PPHRqTqI0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/bol",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"bol"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Succsss",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/bol",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"bol"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 Dec 2023 10:48:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"bolId\": \"78GGJU\",\n        \"status\": true,\n        \"order\": {\n            \"id\": 1,\n            \"pickupDate\": \"2023-12-12T05:00:00.000+00:00\",\n            \"dropoffDate\": \"2023-12-12T05:00:00.000+00:00\",\n            \"pickupLocation\": {\n                \"id\": 2,\n                \"street1\": \"122 4e Avenue\",\n                \"street2\": \"\",\n                \"pincode\": \"H4G 2Y1\",\n                \"country\": \"Canada\",\n                \"city\": \"Verdun\",\n                \"phoneNo\": 4389798973\n            },\n            \"dropoffLocation\": {\n                \"id\": 3,\n                \"street1\": \"4 Place De Trafalgar\",\n                \"street2\": \"\",\n                \"pincode\": \"H3A 1A9\",\n                \"country\": \"Canada\",\n                \"city\": \"Montreal\",\n                \"phoneNo\": 4389798973\n            },\n            \"status\": {\n                \"id\": 1,\n                \"status\": \"ORDER_CREATED\"\n            }\n        }\n    },\n    {\n        \"id\": 2,\n        \"bolId\": \"8845BU\",\n        \"status\": true,\n        \"order\": null\n    }\n]"
+						},
+						{
+							"name": "Success with 2 Orders",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/bol",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"bol"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 Dec 2023 10:48:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"bolId\": \"78GGJU\",\n        \"status\": true,\n        \"order\": {\n            \"id\": 1,\n            \"pickupDate\": \"2023-12-12T05:00:00.000+00:00\",\n            \"dropoffDate\": \"2023-12-12T05:00:00.000+00:00\",\n            \"pickupLocation\": {\n                \"id\": 2,\n                \"street1\": \"122 4e Avenue\",\n                \"street2\": \"\",\n                \"pincode\": \"H4G 2Y1\",\n                \"country\": \"Canada\",\n                \"city\": \"Verdun\",\n                \"phoneNo\": 4389798973\n            },\n            \"dropoffLocation\": {\n                \"id\": 3,\n                \"street1\": \"4 Place De Trafalgar\",\n                \"street2\": \"\",\n                \"pincode\": \"H3A 1A9\",\n                \"country\": \"Canada\",\n                \"city\": \"Montreal\",\n                \"phoneNo\": 4389798973\n            },\n            \"status\": {\n                \"id\": 1,\n                \"status\": \"ORDER_CREATED\"\n            }\n        }\n    },\n    {\n        \"id\": 2,\n        \"bolId\": \"8845BU\",\n        \"status\": true,\n        \"order\": {\n            \"id\": 2,\n            \"pickupDate\": \"2023-12-12T05:00:00.000+00:00\",\n            \"dropoffDate\": \"2023-12-12T05:00:00.000+00:00\",\n            \"pickupLocation\": {\n                \"id\": 2,\n                \"street1\": \"122 4e Avenue\",\n                \"street2\": \"\",\n                \"pincode\": \"H4G 2Y1\",\n                \"country\": \"Canada\",\n                \"city\": \"Verdun\",\n                \"phoneNo\": 4389798973\n            },\n            \"dropoffLocation\": {\n                \"id\": 3,\n                \"street1\": \"4 Place De Trafalgar\",\n                \"street2\": \"\",\n                \"pincode\": \"H3A 1A9\",\n                \"country\": \"Canada\",\n                \"city\": \"Montreal\",\n                \"phoneNo\": 4389798973\n            },\n            \"status\": {\n                \"id\": 1,\n                \"status\": \"ORDER_CREATED\"\n            }\n        }\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Address",
+			"item": [
+				{
+					"name": "Fetch Address By Logged in User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqZXJyeWpveTk5QGdtYWlsLmNvbSIsImlhdCI6MTcwMjI3NjY3OCwiZXhwIjoxNzAyODgxNDc4fQ.bpH-pSr5uKwLI_WL1cttIkcim53JanangYWp_wXfUdaagpeSe1yKK2Y9mS-LpAOx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/address",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqZXJyeWpveTk5QGdtYWlsLmNvbSIsImlhdCI6MTcwMjI4NzY4MSwiZXhwIjoxNzAyODkyNDgxfQ.s9lnoW6mBvRFbB2JE94xGfEknh791Nme0H1nx6EbKXasRuaoXLiWjk6ifiZCo27r",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"street1\": \"20-3840 Rue Vezina\",\r\n    \"street2\": \"Plamondon\",\r\n    \"pincode\": \"H3H 1A9\",\r\n    \"country\": \"Canada\",\r\n    \"city\": \"Montreal\",\r\n    \"phoneNo\": 4389798973\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/address",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"address"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"street1\": \"20-3840 Rue Vezina\",\r\n    \"street2\": \"Plamondon\",\r\n    \"pincode\": \"H3H 1A9\",\r\n    \"country\": \"Canada\",\r\n    \"city\": \"Montreal\",\r\n    \"phoneNo\": 4389798973\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/address",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"address"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 Dec 2023 10:25:58 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 4,\n    \"street1\": \"20-3840 Rue Vezina\",\n    \"street2\": \"Plamondon\",\n    \"pincode\": \"H3H 1A9\",\n    \"country\": \"Canada\",\n    \"city\": \"Montreal\",\n    \"phoneNo\": 4389798973\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Fetch Address By Logged in User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqZXJyeWpveTk5QGdtYWlsLmNvbSIsImlhdCI6MTcwMjI3NjY3OCwiZXhwIjoxNzAyODgxNDc4fQ.bpH-pSr5uKwLI_WL1cttIkcim53JanangYWp_wXfUdaagpeSe1yKK2Y9mS-LpAOx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/address",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch Unclaimed Bol",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqZXJyeWpveTk5QGdtYWlsLmNvbSIsImlhdCI6MTcwMjI4MDE3OCwiZXhwIjoxNzAyODg0OTc4fQ.0BoKeyYWil9yhxhmfgXyV7DANBNnicWD0kwe6kuVFzqVqXY-QzIA3AEkA14TAWVp",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/order/bol",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"order",
+								"bol"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/v1/order/bol",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"order",
+										"bol"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 Dec 2023 10:24:44 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"bolId\": \"67UH889\",\n        \"status\": true,\n        \"order\": null\n    },\n    {\n        \"id\": 4,\n        \"bolId\": \"67UH889\",\n        \"status\": true,\n        \"order\": null\n    },\n    {\n        \"id\": 5,\n        \"bolId\": \"67UH889\",\n        \"status\": true,\n        \"order\": null\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Create Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqZXJyeWpveTk5QGdtYWlsLmNvbSIsImlhdCI6MTcwMjI4NTM4NiwiZXhwIjoxNzAyODkwMTg2fQ.szW8bsgaOzPgkAs5qQn1cHAkCUPafx8bafPZNWQ-qdKydZd2w9kVFV9PPHRqTqI0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"pickupDate\": \"12/12/2023\",\r\n   \"dropoffDate\":\"12/15/2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/order?bolId=2&pickUpID=2&dropOffID=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"order"
+							],
+							"query": [
+								{
+									"key": "bolId",
+									"value": "2"
+								},
+								{
+									"key": "pickUpID",
+									"value": "2"
+								},
+								{
+									"key": "dropOffID",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"pickupDate\": \"12/12/2023\",\r\n   \"dropoffDate\":\"12/15/2023\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/order?bolId=3&pickUpID=2&dropOffID=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"order"
+									],
+									"query": [
+										{
+											"key": "bolId",
+											"value": "3"
+										},
+										{
+											"key": "pickUpID",
+											"value": "2"
+										},
+										{
+											"key": "dropOffID",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 11 Dec 2023 10:24:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 15,\n    \"pickupDate\": \"2023-12-12T05:00:00.000+00:00\",\n    \"dropoffDate\": \"2023-12-12T05:00:00.000+00:00\",\n    \"pickupLocation\": {\n        \"id\": 2,\n        \"street1\": \"122 4e Avenue\",\n        \"street2\": \"\",\n        \"pincode\": \"H4G 2Y1\",\n        \"country\": \"Canada\",\n        \"city\": \"Verdun\",\n        \"phoneNo\": 4389798973\n    },\n    \"dropoffLocation\": {\n        \"id\": 3,\n        \"street1\": \"4 Place De Trafalgar\",\n        \"street2\": \"\",\n        \"pincode\": \"H3A 1A9\",\n        \"country\": \"Canada\",\n        \"city\": \"Montreal\",\n        \"phoneNo\": 4389798973\n    },\n    \"userDto\": {\n        \"first_name\": \"Jerry\",\n        \"last_name\": \"Joy\",\n        \"email\": \"jerryjoy99@gmail.com\"\n    },\n    \"status\": {\n        \"id\": 1,\n        \"status\": \"ORDER_CREATED\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Fetch All Orders",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqZXJyeWpveTk5QGdtYWlsLmNvbSIsImlhdCI6MTcwMjI4NTM4NiwiZXhwIjoxNzAyODkwMTg2fQ.szW8bsgaOzPgkAs5qQn1cHAkCUPafx8bafPZNWQ-qdKydZd2w9kVFV9PPHRqTqI0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"pickupDate\": \"12/12/2023\",\r\n   \"dropoffDate\":\"12/15/2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"order"
+							],
+							"query": [
+								{
+									"key": "bolId",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "pickUpID",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "dropOffID",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

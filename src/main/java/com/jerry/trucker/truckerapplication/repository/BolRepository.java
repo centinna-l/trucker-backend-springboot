@@ -13,7 +13,6 @@ public interface BolRepository extends JpaRepository<Bol, Long> {
 
     Optional<Bol> findById(long id);
 
-
     void deleteByBolId(String bolId);
 
     // to fetch all active or inactive status.

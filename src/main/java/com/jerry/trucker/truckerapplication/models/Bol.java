@@ -1,6 +1,7 @@
 package com.jerry.trucker.truckerapplication.models;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -25,5 +26,6 @@ public class Bol {
     private boolean status;
 
     @OneToOne(mappedBy = "bol", cascade = CascadeType.ALL)
+    @JsonIgnore
     private Order order;
 }

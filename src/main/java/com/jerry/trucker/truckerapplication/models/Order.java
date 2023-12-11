@@ -43,6 +43,7 @@ public class Order {
 
     @OneToOne
     @JoinColumn(name = "bol_id")
+    @JsonIgnore
     private Bol bol;
 
     @ManyToOne

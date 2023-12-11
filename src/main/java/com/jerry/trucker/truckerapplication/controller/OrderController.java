@@ -34,7 +34,7 @@ public class OrderController {
 
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    @PostMapping("/create")
+    @PostMapping
     public ResponseEntity<OrderDto> createOrder(
             @RequestParam(name = "bolId") long bolID,
             @RequestParam(name = "pickUpID") long pickUpID,
